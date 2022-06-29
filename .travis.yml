@@ -7,6 +7,5 @@ before_install:
     - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
 deploy:
   provider: heroku
-  api_key:
-      secure: $HEROKU_TOKEN
+  api_key: $HEROKU_TOKEN
   app: "book-storeapp-demo"
