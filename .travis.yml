@@ -3,7 +3,7 @@ before_install:
 
 language: java
 jdk:
-  -openjdk11
+  -openjdk8
 
 before_deploy:
   - rvm requirements
